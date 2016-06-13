@@ -19,11 +19,11 @@
     		// on redirige notre visiteur vers une page de notre section membre
     		header ('location: ./home_page.php');
     	}else {
-			header('location: ./Inscription_Validation.html');	
+			header('location: ./Connexion_Erreur.html');	
 		// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
     		echo '<body onLoad="alert(\'Nom ou mot de passe incorrect\')">';
     		// puis on le redirige vers la page d'accueil
-    		echo '<meta http-equiv="refresh" content="0;URL=autobat.php">';
+    		echo '<meta http-equiv="refresh" content="0;URL=home_page.php">';
     	}
 }
     else {
