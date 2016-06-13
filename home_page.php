@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="img/amap_logo.png" />
 
-    <title>AMAP test</title>
+    <title>AMAP</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
