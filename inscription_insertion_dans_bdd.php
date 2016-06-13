@@ -20,20 +20,6 @@ catch (Exception $e)
 {
     die('Erreur : '.$e->getMessage());
 }
-
-    $reponse = $bdd->query('SELECT * FROM utilisateur');
-    //Parcours de liste
-    while ($donnees = $reponse->fetch())
-    {
-        //Si l'identifiant proposé est déjà dans la BDD alors
-        if ($donnees['pseudo'] == $_POST['pseudoInscr'])
-        {
-            //On bloque la boucle d'inscription
-            $var = '1';
-            $reponse->closeCursor();
-            header('location:Inscription_Erreur.html');
-        }
-    }
     
     //Si l'identifiant proposé est déjà utillisé, on ne rentre pas, sinon pas de soucis
     if ($var == '0') 
@@ -57,16 +43,6 @@ catch (Exception $e)
             'pays' => $_POST['paysInscr'],
             'tel' => $_POST['telInscr'],
             ));
-            $_SESSION['pseudo']= $_POST['pseudoInscr'];
-            
-            $reponse = $bdd->query('SELECT * FROM utilisateur');
-            while ($donnees = $reponse->fetch())
-            {
-                if ($donnees['pseudo'] == $_SESSION['pseudo'])
-                {
-                    $_SESSION['id'] = $donnees['id_utilisateur'];
-                }
-            }
         
         //Sinon on insert into ici avec les valeurs de l'utilisateur
         }else{
@@ -85,19 +61,6 @@ catch (Exception $e)
             'pays' => $_POST['paysInscr'],
             'tel' => $_POST['telInscr'],
             ));
-            $_SESSION['pseudo']= $_POST['pseudoInscr'];
-            
-            $reponse = $bdd->query('SELECT * FROM clients');
-            
-            //On utilise cette boucle pour pouvoir trouver l'id du dernier utilisateur ajouté, pour pouvoir l'utiliser plus tard pendant que nous passerons commande ou si nous souhaitons changer une information de compte
-            while ($donnees = $reponse->fetch())
-            {
-                if ($donnees['pseudo'] == $_SESSION['pseudo'])
-                {
-                    $_SESSION['id'] = $donnees['id_utilisateur'];
-                }
-            }
-        }
         
         //On ferme toutes les query sur la bdd
         $req->closeCursor();

@@ -171,60 +171,75 @@
         
   </div>
   
-</div><!-- /.container -->
 
 <!-- fin PANNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELS -->
 
 <!-- PANIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERS -->
 
-<div class="container">
-
-<div class="row">
-<div class="col-lg-1">
+<div class="row" style="margin-top: 75px;">
+<div class="col-lg-4">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel title</h3>
+    <h3 class="panel-title">Panier Carnivore</h3>
   </div>
   <div class="panel-body">
-    Panel content
+    - Viande <br>
+    - Viande <br>
+    - Viande <br>
+    - Viande <br>
+    - Viande <br>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
 
-<div class="col-lg-1">
+<div class="col-lg-4">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel title</h3>
+    <h3 class="panel-title">Panier Herbivore</h3>
   </div>
   <div class="panel-body">
-    Panel content
+    - Herbe <br>
+    - Herbe <br>
+    - Herbe <br>
+    - Herbe <br>
+    - Herbe <br>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
 
-<div class="col-sm-1">
+<div class="col-lg-4">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel title</h3>
+    <h3 class="panel-title">Panier Omnivore</h3>
   </div>
   <div class="panel-body">
-    Panel content
+    - Viande <br>
+    - Herbe <br>
+    - Herbe <br>
+    - Viande <br>
+    - Herbe <br>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
 </div>
 
-</div>
+</div><!-- /.container -->
 
 <!-- fin PANIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERS -->
 
 
+ <div class="logo_home_page">
+                <img src="img/amap_logo.png" style="width: 300px;"> 
+                </div>
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p class="copyright text-muted">AMAP de merde Inc &copy;</p>
+                    <p class="copyright text-muted">Groupe 4 - MSIA15 Nanterre &copy;</p>
                 </div>
             </div>
         </div>
