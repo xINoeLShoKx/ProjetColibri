@@ -285,52 +285,56 @@
                       <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
                           <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
                           <form class="form-inscription" method="post" action="inscription_insertion_dans_bdd.php">
-                          <div class="row">
-                              <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="firstname" placeholder="First Name" type="text"required autofocus />
-                              </div>
-                              <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                              </div>
-                          </div>
-                          <input class="form-control" name="pseudo" placeholder="Your Pseudo" type="text" />
-                          <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
-                          <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-                          <input class="form-control" name="password" placeholder="New Password" type="password" />                          
-                          <input class="form-control" name="telephone" placeholder="Your phone" type="telephone" />
-                          <input class="form-control" name="Codepostale" placeholder="Your postalcode" type="text" />
-                          <input class="form-control" name="country" placeholder="Your Country" type="text" />
-                          <label for="">
-                              Birth Date</label>
-                          <div class="row">
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Month">Month</option>
-                                  </select>
-                              </div>
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Day">Day</option>
-                                  </select>
-                              </div>
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Year">Year</option>
-                                  </select>
-                              </div>
-                          </div>
-                          <label class="radio-inline">
-                              <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                              Male
-                          </label>
                           <label class="radio-inline">
                               <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
                               Female
                           </label>
-                          <br />
-                          <br />
-                          <button class="btn btn-lg btn-primary btn-block" type="submit">
-                              Sign up</button>
+                          <label class="radio-inline">
+                              <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                              Male
+                          </label>
+                          <div class="row">
+                              <div class="col-xs-6 col-md-6">
+                                  <input class="form-control" name="firstname" placeholder="Prenom" type="text"required autofocus />
+                              </div>
+                              <div class="col-xs-6 col-md-6">
+                                  <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
+                              </div>
+                          </div>
+                          <input class="form-control" name="pseudo" placeholder="Votre Pseudo" type="text" />
+                          <label for="">
+                              Date de naissance</label>
+                          <div class="row">
+                              <div class="col-xs-4 col-md-4">
+                                  <select class="form-control">
+                                      <option value="Day">Jour</option>
+                                  </select>
+                              </div>
+                              <div class="col-xs-4 col-md-4">
+                                  <select class="form-control">
+                                      <option value="Month">Mois</option>
+                                  </select>
+                              </div>                              
+                              <div class="col-xs-4 col-md-4">
+                                  <select class="form-control">
+                                      <option value="Year">Année</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <input class="form-control" name="email" placeholder="Votre Email" type="email" />
+                          <input class="form-control" name="reenteremail" placeholder="Reécrivez votre Email" type="email" />
+                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" />                          
+                          <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" />
+                          <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" />
+                          <input class="form-control" name="adresse2" placeholder="Complément d'adresse" type="text" />
+                          <input class="form-control" name="postalecode" placeholder="Votre CodePostal" type="text" />
+                          <input class="form-control" name="ville" placeholder="Ville où vous vivez en ce moment" type="text" />                          
+                          
+                          <br /><br />
+                          <button class="btn btn-lg btn-primary btn-block" type="submit">Confirmez !</button>
+                          <button class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-controls-modal="#modalInscription" data-backdrop="static" data-target="#modalInscription">Retour</button>
+            
+
                           </form>
                       </div>
                   </div>
