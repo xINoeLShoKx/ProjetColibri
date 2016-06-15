@@ -65,7 +65,7 @@ if (!isset($_SESSION['pseudo_user']))
                 <ul class="nav navbar-nav navbar-right" id="menu">
                     <li>
                         <!-- Trigger the modal with a link -->
-                        <a data-toggle="modal" data-target="#myModal">Se connecter</a>
+                        <a data-toggle="modal" data-target="#myModal">Mon compte</a>
                     </li>
                 </ul>
             </div>
@@ -250,104 +250,7 @@ if (!isset($_SESSION['pseudo_user']))
             </div>
         </div>
     </footer>
-                        <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Connexion</h4>
-          </div>
-            <form class="form-inscription" method="post" action="connexion.php">
-                      <div class="modal-body">
-                        <p class="text-muted">Identifiant
-                        <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
-                         <p class="text-muted">Mot de passe
-                         <input type="password" class="form-control" placeholder="Votre mot de passe" name="mdp" pattern="(?=.*\d)(?=.*[0-9]).{6,}"></p>
-                         <h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>
-                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore dans la famille ? Inscrivez-vous</a></p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn btn-default" href="connexion.php">Connexion</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                      </div>
-            </form>
-        </div>
-
-      </div>
-    </div>
-
-     <!-- Modal Inscription -->
-    <div id="modalInscription" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-                    <!-- Modal Inscription content-->
-        
-            <div class="modal-content">
-                <div class="container">
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-                          <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
-                          <form class="form-inscription" method="post" action="inscription_insertion_dans_bdd.php">
-                          <label class="radio-inline">
-                              <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                              Female
-                          </label>
-                          <label class="radio-inline">
-                              <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                              Male
-                          </label>
-                          <div class="row">
-                              <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="firstname" placeholder="Prenom" type="text"required autofocus />
-                              </div>
-                              <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
-                              </div>
-                          </div>
-                          <input class="form-control" name="pseudo" placeholder="Votre Pseudo" type="text" />
-                          <label for="">
-                              Date de naissance</label>
-                          <div class="row">
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Day">Jour</option>
-                                  </select>
-                              </div>
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Month">Mois</option>
-                                  </select>
-                              </div>                              
-                              <div class="col-xs-4 col-md-4">
-                                  <select class="form-control">
-                                      <option value="Year">Année</option>
-                                  </select>
-                              </div>
-                          </div>
-                          <input class="form-control" name="email" placeholder="Votre Email" type="email" />
-                          <input class="form-control" name="reenteremail" placeholder="Reécrivez votre Email" type="email" />
-                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" />                          
-                          <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" />
-                          <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" />
-                          <input class="form-control" name="adresse2" placeholder="Complément d'adresse" type="text" />
-                          <input class="form-control" name="postalecode" placeholder="Votre CodePostal" type="text" />
-                          <input class="form-control" name="ville" placeholder="Ville où vous vivez en ce moment" type="text" />                          
-                          
-                          <br /><br />
-                          <button class="btn btn-lg btn-primary btn-block" type="submit">Confirmez !</button>
-                          <button class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-controls-modal="#modalInscription" data-backdrop="static" data-target="#modalInscription">Retour</button>
-            
-
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
+   
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

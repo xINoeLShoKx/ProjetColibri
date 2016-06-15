@@ -260,7 +260,7 @@ if (isset($_SESSION['pseudo_user']))
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Connexion</h4>
           </div>
-            <form class="form-inscription" method="post" action="connexion.php">
+            <form class="form-inscription" method="post" action="Connexion_Controleur.php">
                       <div class="modal-body">
                         <p class="text-muted">Identifiant
                         <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
