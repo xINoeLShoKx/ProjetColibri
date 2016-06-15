@@ -2,9 +2,9 @@
 <html lang="en">
 <?php session_start();
 
-if (isset($_SESSION['pseudo_user']))
+if (!isset($_SESSION['pseudo_user']))
 {
-    header("location:home_page_connecte.php");
+    header("location:home_page.php");
 }
 ?>
 
