@@ -77,3 +77,20 @@ if (!isset($_SESSION['pseudo_user']))
         </div>
         <!-- /.container -->
     </nav>
+
+    <body id="page-top">
+
+ <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+            <h1>VOTRE CONTRAT</h1> 
+            <hr> 
+             <p class="text-muted">Ici le contenu de la commande.</p>        
+            </div>
+            <br><br>
+           <div class="text-center" style="margin-top: 20px;"><a href="home_page_connecte.php"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Retour</button></a></div>
+        </div>
+    </aside>        
+
+</body>
+</html>

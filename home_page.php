@@ -266,12 +266,12 @@ if (isset($_SESSION['pseudo_user']))
                         <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
                          <p class="text-muted">Mot de passe
                          <input type="password" class="form-control" placeholder="Votre mot de passe" name="mdp" pattern="(?=.*\d)(?=.*[0-9]).{6,}"></p>
-                         <h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>
-                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore dans la famille ? Inscrivez-vous</a></p>
+                         <!--<h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>-->
+                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore inscrit(e) ?</a></p>
                       </div>
                       <div class="modal-footer">
-                        <button type="submit" class="btn btn-default" href="connexion.php">Connexion</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="submit" class="btn btn-primary outline" href="connexion.php">Connexion</button>
+                        <button type="button" class="btn btn-primary outline" data-dismiss="modal">Fermer</button>
                       </div>
             </form>
         </div>
