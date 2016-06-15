@@ -307,7 +307,10 @@ if (isset($_SESSION['pseudo_user']))
                                   <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
                               </div>
                           </div>
-                          <input class="form-control" name="pseudo" placeholder="Votre Pseudo" type="text" />
+                          
+                          <input class="form-control" name="email" placeholder="Votre Email" type="email" />
+    
+                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" /> 
                           <label for="">
                               Date de naissance</label>
                           <div class="row">
@@ -326,10 +329,7 @@ if (isset($_SESSION['pseudo_user']))
                                       <option value="Year">Année</option>
                                   </select>
                               </div>
-                          </div>
-                          <input class="form-control" name="email" placeholder="Votre Email" type="email" />
-                          <input class="form-control" name="reenteremail" placeholder="Reécrivez votre Email" type="email" />
-                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" />                          
+                          </div>                         
                           <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" />
                           <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" />
                           <input class="form-control" name="adresse2" placeholder="Complément d'adresse" type="text" />
