@@ -24,6 +24,10 @@ function check_login()
             // redirection page membre
             header('location: home_page_connecte.php');
          }
+
+         else{
+             header('location: Connexion_Erreur.html');
+         }
     }
-    header('location: home_page_connecte.php');
+    //header('location: home_page_connecte.php');
 }

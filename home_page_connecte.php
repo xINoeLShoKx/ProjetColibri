@@ -67,6 +67,10 @@ if (!isset($_SESSION['pseudo_user']))
                         <!-- Trigger the modal with a link -->
                         <a data-toggle="modal" data-target="#myModal">Mon compte</a>
                     </li>
+                    <li>
+                        <!-- Trigger the modal with a link -->
+                        <a href="Session_Destroy.php">Deconnexion</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -194,7 +198,7 @@ if (!isset($_SESSION['pseudo_user']))
     - Viande <br>
     - Viande <br>
     - Viande <br>
-    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
+    <div class="text-center" style="margin-top: 20px;"><a href="commande.php"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
   </div>
 </div>
 </div>
@@ -210,7 +214,7 @@ if (!isset($_SESSION['pseudo_user']))
     - Herbe <br>
     - Herbe <br>
     - Herbe <br>
-    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
+    <div class="text-center" style="margin-top: 20px;"><a href="commande.php"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
   </div>
 </div>
 </div>
@@ -226,7 +230,7 @@ if (!isset($_SESSION['pseudo_user']))
     - Herbe <br>
     - Viande <br>
     - Herbe <br>
-    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
+    <div class="text-center" style="margin-top: 20px;"><a href="commande.php"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
   </div>
 </div>
 </div>
