@@ -2,7 +2,7 @@
 // Si champs vides
 if (empty($_POST['login']) || empty($_POST['mdp']))
 {
-  header ('location: home_page.php');
+  	header ('location: home_page.php');
 }
 
 // Si champs sont remplis

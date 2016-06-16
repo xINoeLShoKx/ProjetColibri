@@ -271,19 +271,19 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Connexion</h4>
           </div>
-            <form class="form-inscription" method="post" action="Connexion_Controleur.php">
-                      <div class="modal-body">
-                        <p class="text-muted">Identifiant
-                        <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
-                         <p class="text-muted">Mot de passe
-                         <input type="password" class="form-control" placeholder="Votre mot de passe" name="mdp" pattern="(?=.*\d)(?=.*[0-9]).{6,}"></p>
-                         <!--<h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>-->
-                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore inscrit(e) ?</a></p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary outline" href="connexion.php">Connexion</button>
-                        <button type="button" class="btn btn-primary outline" data-dismiss="modal">Fermer</button>
-                      </div>
+            <form class="form-inscription" method="POST" action="Connexion_Controleur.php">
+                <div class="modal-body">
+                  <p class="text-muted">Identifiant
+                  <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
+                   <p class="text-muted">Mot de passe
+                   <input type="password" class="form-control" placeholder="Votre mot de passe" name="mdp" ></p>
+                   <!--<h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>-->
+                   <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore inscrit(e) ?</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary outline" >Connexion</button>
+                  <button type="button" class="btn btn-primary outline" data-dismiss="modal">Fermer</button>
+                </div>
             </form>
         </div>
 
@@ -345,10 +345,10 @@
                                   </select>
                               </div>
                           </div>                         
-                          <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" />
+                          <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" pattern="[0-9]{10}"/>
                           <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" pattern="{5,50}" />
                           <input class="form-control" name="adresse2" placeholder="Complément d'adresse" type="text" />
-                          <input class="form_control" name="codepostal" placeholder="ex: 75001" pattern="[0-9]{5}" />
+                          <!--<input class="form_control" name="codepostal" placeholder="ex: 75001" pattern="[0-9]{5}" />-->
                           <select name="codepostal[]" class="form-control">
                           <?php                           
                               $reponse = $bdd->query('select * from ville'); 
@@ -357,6 +357,7 @@
                              <?php } ?>
                           
                           </select>     
+                          <!--<input type="text" class="form-control" placeholder="Choissiez votre Ville" name="ville" pattern="[A-Za-z]{1,50}">-->
                           <select name="ville[]" class="form-control">
                           <?php                           
                               $reponse = $bdd->query('select * from ville'); 
