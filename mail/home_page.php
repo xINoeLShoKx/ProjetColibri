@@ -205,7 +205,7 @@
     - Viande <br>
     - Viande <br>
     - Viande <br>
-    <div class="text-center" style="margin-top: 20px;"><a href="Connexion_Erreur_Commande.html"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
@@ -221,7 +221,7 @@
     - Herbe <br>
     - Herbe <br>
     - Herbe <br>
-    <div class="text-center" style="margin-top: 20px;"><a href="Connexion_Erreur_Commande.html"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
@@ -237,7 +237,7 @@
     - Herbe <br>
     - Viande <br>
     - Herbe <br>
-    <div class="text-center" style="margin-top: 20px;"><a href="Connexion_Erreur_Commande.html"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></a></div>
+    <div class="text-center" style="margin-top: 20px;"><button type="button" class="btn btn-primary outline" style="margin-bot: 20px;">Commander</button></div>
   </div>
 </div>
 </div>
@@ -271,18 +271,18 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Connexion</h4>
           </div>
-            <form class="form-inscription" method="post" action="Connexion_Controleur.php">
+            <form class="form-inscription" method="post" action="connexion.php">
                       <div class="modal-body">
                         <p class="text-muted">Identifiant
                         <input type="identifiant" class="form-control" placeholder="Votre identifiant" name="login" pattern="{3,20}"></p>
                          <p class="text-muted">Mot de passe
                          <input type="password" class="form-control" placeholder="Votre mot de passe" name="mdp" pattern="(?=.*\d)(?=.*[0-9]).{6,}"></p>
-                         <!--<h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>-->
-                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore inscrit(e) ?</a></p>
+                         <h5 class="text-muted"><input type="checkbox" class="checkbox" />Se souvenir de moi</h5>
+                         <p><a data-toggle="modal" data-target="#modalInscription" class="link_inscription">Pas encore dans la famille ? Inscrivez-vous</a></p>
                       </div>
                       <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary outline" href="connexion.php">Connexion</button>
-                        <button type="button" class="btn btn-primary outline" data-dismiss="modal">Fermer</button>
+                        <button type="submit" class="btn btn-default" href="connexion.php">Connexion</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                       </div>
             </form>
         </div>
