@@ -13,7 +13,7 @@
     }
     session_start();
 
-    if (isset($_SESSION['pseudo_user']))
+    if (isset($_SESSION['mail_user']))
     {
         header("location:home_page_connecte.php");
     }
@@ -304,16 +304,16 @@
                           <form class="form-inscription" method="post" action="inscription_insertion_dans_bdd.php">                          
                           <div class="row">
                               <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="firstname" placeholder="Prenom" type="text"required autofocus />
+                                  <input class="form-control" name="firstname" placeholder="Prenom" type="text" pattern="[A-Za-z]{2,40}" required autofocus />
                               </div>
                               <div class="col-xs-6 col-md-6">
-                                  <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
+                                  <input class="form-control" name="lastname" placeholder="Nom" type="text" pattern="[A-Za-z]{2,40}" required />
                               </div>
                           </div>
                           
-                          <input class="form-control" name="email" placeholder="Votre Email" type="email" />
+                          <input class="form-control" name="email" placeholder="Votre Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
     
-                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" /> 
+                          <input class="form-control" name="password" placeholder="Votre Motdepasse" type="password" pattern="(?=.*\d)(?=.*[0-9]).{6,}"/> 
                           <label for="">
                               Date de naissance</label>
                           <div class="row">
@@ -346,8 +346,9 @@
                               </div>
                           </div>                         
                           <input class="form-control" name="telephone" placeholder="Votre Numéro de téléphone" type="telephone" />
-                          <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" />
+                          <input class="form-control" name="adresse1" placeholder="Votre adresse" type="text" pattern="{5,50}" />
                           <input class="form-control" name="adresse2" placeholder="Complément d'adresse" type="text" />
+                          <input class="form_control" name="codepostal" placeholder="ex: 75001" pattern="[0-9]{5}" />
                           <select name="codepostal[]" class="form-control">
                           <?php                           
                               $reponse = $bdd->query('select * from ville'); 

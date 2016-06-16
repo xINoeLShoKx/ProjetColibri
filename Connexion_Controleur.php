@@ -5,7 +5,7 @@ if (empty($_POST['login']) || empty($_POST['mdp']))
   header ('location: home_page.php');
 }
 
-// Si champs avec quelque chose dedans
+// Si champs sont remplis
 if (isset($_POST['login']) && isset($_POST['mdp']))
 {
     include ('Connexion_Modele.php');

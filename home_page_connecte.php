@@ -2,7 +2,7 @@
 <html lang="en">
 <?php session_start();
 
-if (!isset($_SESSION['pseudo_user']))
+if (!isset($_SESSION['mail_user']))
 {
     header("location:home_page.php");
 }
