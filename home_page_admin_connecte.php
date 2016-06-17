@@ -70,6 +70,11 @@ if (!isset($_SESSION['mail_user']))
                     </li>
                     <li>
                         <!-- Trigger the modal with a link -->
+                        <a href="Gestion_données.php">Gestion de données</a>
+
+                    </li>
+                    <li>
+                        <!-- Trigger the modal with a link -->
                         <a href="Session_Destroy.php">Deconnexion</a>
                     </li>
                 </ul>
