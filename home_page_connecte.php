@@ -18,7 +18,7 @@ if (!isset($_SESSION['mail_user']))
     <link rel="icon" type="image/png" href="img/amap_logo.png" />
 
     <title>AMAP</title>
-
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
